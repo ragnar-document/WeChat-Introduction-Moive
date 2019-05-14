@@ -1,0 +1,10 @@
+<view class='container'>
+  <image src='/images/logo.png'></image>
+  <text class='title'>电影周周刊</text>
+  <navigator url='/pages/weekly/weekly' 
+  open-type='switchTab' 
+  class='nav-default'
+  hover-class='nav-hover'
+  ><text>每周一部好片</text></navigator>
+  <text>我的博客：Ragnar-document.github.io</text>
+</view>

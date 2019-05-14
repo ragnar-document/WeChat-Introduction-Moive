@@ -1,0 +1,26 @@
+.container{
+  background-color: #eee;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+image{
+  height: 30vh;
+  width: 375rpx;
+}
+
+.title{
+  font-weight: 500;
+  font-size: 60rpx;
+}
+
+.nav-default{
+  color: green;
+}
+
+.nav-hover{
+  color: red;
+}

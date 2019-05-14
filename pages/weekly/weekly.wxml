@@ -1,0 +1,18 @@
+ <view class='weekly_container'>
+  <swiper class='movie' indicator-dots='true' current='{{ currentIndex }}'>
+    <swiper-item class='movie-item' wx:for="{{WeekMovies}}" wx:key="index">
+    <view class='movie_container' bindtap='f1' data-movie-id="{{ item.id }}">
+      <image class='movie-imge' src='{{ item.imagePath }}' ></image>
+      <view class='movie-details'>
+        <text>第{{index+1}}天电影名称：{{ item.name }}</text>
+        <text>
+          点评：<text wx:if="{{ item.comment }}"  style='color:red'>推荐观看</text>
+          {{ item.comment }}
+        </text>
+      </view>
+      <text class='return-btn'  wx:if="{{ index < (WeekMovies.length - 1 )}}" catchtap="f0">Return New</text>
+
+    </view>
+    </swiper-item>
+  </swiper>
+ </view>

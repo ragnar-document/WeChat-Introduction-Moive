@@ -1,0 +1,14 @@
+<view class='xq_container'>
+ <view class='xq_title'>
+   <image src='{{ movie.images.small }}' style='width:80%'></image>
+    <view class='xq_title_content'>
+      <text>电影名称:{{ movie.title }}</text>
+      <text>出版时间"{{ movie.pubdate }}</text>
+      <text>想看:{{ movie.wish_count }}</text>
+      <text>看过:{{ movie.collect_count }}</text>
+      <text>评分:{{ movie.rating.average }}</text>
+      <text>类别:{{ movie.genres }}</text>
+    </view>
+ </view>
+  <text style='font-size:32rpx;'>简介:{{ movie.summary }}</text>
+</view>
